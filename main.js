@@ -5,7 +5,8 @@ const category = require('./Database/Category');
 const product = require('./Database/Product');
 const category_api_call = require('./API_Calls/Category_API_Calls');
 const product_api_call = require('./API_Calls/Product_API_Call');
-
+const payment_api_call = require('./payment_api_call');
+const resturant_table_api_call =require('./resturant_table_api_call')
 
 const bodyParser = require('body-parser');
 server_conn.use(bodyParser.json());
@@ -32,3 +33,17 @@ server_conn.post ('/update_product_category', product_api_call.update_product_ca
 server_conn.post ('/delete_product', product_api_call.delete_product_call);
 
 
+// Payment-related API routes
+server_connection.post('/add_new_payment', payment_api_call.add_new_payment);
+server_connection.post('/get_payments_by_amount', payment_api_call.getPaymentsByAmount);
+server_connection.post('/get_payments_by_year', payment_api_call.getPaymentsByYear);
+server_connection.post('/get_payments_by_month', payment_api_call.getPaymentsByMonth);
+server_connection.post('/get_payments_by_day', payment_api_call.getPaymentsByDay);
+server_connection.post('/delete_payment_by_id', payment_api_call.deletePaymentById);
+server_connection.post('/delete_payment_by_customer_order_id', payment_api_call.deletePaymentByCustomerOrderId);
+
+// Table-related API routes
+server_connection.post('/add_new_table',resturant_table_api_call.addNewTable);
+server_connection.post('/get_table_by_number', resturant_table_api_call.getTableByNumber);
+server_connection.post('/update_table_status', resturant_table_api_call.updateTableStatus);
+server_connection.post('/delete_table_by_number', resturant_table_api_call.deleteTableByNumber);
