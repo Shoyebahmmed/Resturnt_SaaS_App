@@ -1,4 +1,4 @@
-const database_connection = require('./DB_Conn');
+const database_connection = require('../Connections/DB_Conn');
 
 function insert_data_category(cat_name, cat_desc) {
     

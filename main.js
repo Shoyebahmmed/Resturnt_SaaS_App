@@ -1,10 +1,10 @@
 const express = require('express');
-const server_conn = require('./Server_Conn');
-const DB_conn =  require('./DB_Conn');
-const category = require('./Category');
-const product = require('./Product');
-const category_api_call = require('./Category_API_Calls');
-const product_api_call = require('./Product_API_Call');
+const server_conn = require('./Connections/Server_Conn');
+const DB_conn =  require('./Connections/DB_Conn');
+const category = require('./Database/Category');
+const product = require('./Database/Product');
+const category_api_call = require('./API_Calls/Category_API_Calls');
+const product_api_call = require('./API_Calls/Product_API_Call');
 
 
 const bodyParser = require('body-parser');

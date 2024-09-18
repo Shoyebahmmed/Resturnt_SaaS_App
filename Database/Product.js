@@ -1,4 +1,4 @@
-const db_connection = require('./DB_Conn');
+const db_connection = require('../Connections/DB_Conn');
 
 function insert_data_product(product_name, product_desc, product_price, cat_id) {
    

@@ -1,5 +1,5 @@
-const server_conn = require('./Server_Conn');
-const category = require('./Category');
+const server_conn = require('../Connections/Server_Conn');
+const category = require('../Database/Category');
 
 async function insert_category_call (req, res) {
     let category_name = req.body.category_name;

@@ -1,4 +1,4 @@
-const product = require('./Product');
+const product = require('../Database/Product');
 
 
 async function insert_product_call (req, res) {
