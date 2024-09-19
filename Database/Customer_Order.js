@@ -21,7 +21,7 @@ function insert_customer_order(total_amount, rest_table_id){
           else{
             resolve(results);
           }
-          db_connection.end();
+          
         }
         )
       }
@@ -50,7 +50,7 @@ function read_customer_order_by_cust_order_id(cust_order_id){
           else{
             resolve(results);
           }
-          db_connection.end();
+          
         }
         )
       }
@@ -78,7 +78,7 @@ function read_customer_order_by_rest_table_id(rest_table_id){
           else{
             resolve(results);
           }
-          db_connection.end();
+          
         }
         )
       }
@@ -110,7 +110,7 @@ function read_customer_order_by_order_time_range(rest_table_id){
           else{
             resolve(results);
           }
-          db_connection.end();
+          
         }
         )
       }
@@ -156,7 +156,7 @@ function read_customer_order_by_order_amount(rest_table_id, min_amount) {
           } else {
             resolve(results);
           }
-          db_connection.end();
+          
         });
       }
     });
@@ -187,7 +187,7 @@ function update_order_amount(cust_order_id, new_amount) {
           } else {
             resolve(result);
           }
-          db_connection.end();
+          
         });
       }
     });
@@ -214,7 +214,7 @@ function delete_cust_order_id(cust_order_id) {
           } else {
             resolve(result);
           }
-          db_connection.end();
+          
         });
       }
     });

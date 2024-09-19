@@ -20,7 +20,7 @@ function insert_data_category(cat_name, cat_desc) {
                     else {
                         resolve(results);
                     }
-                    database_connection.end();
+                    
                 });
             }
         });
@@ -47,7 +47,7 @@ function read_category_data_by_category_id(cat_id) {
                     else {
                         resolve(results);
                     }
-                    database_connection.end();
+                    
                 });
             }
         });
@@ -75,7 +75,7 @@ function read_category_data_by_category_name(cat_name) {
                     else {
                         resolve(results);
                     }
-                    database_connection.end();
+                    
                 });
             }
         });
@@ -103,7 +103,7 @@ function update_category_data_by_category_id(cat_id, cat_new_name, cat_new_descr
                         console.log('Update successful:', results);
                         resolve(results);
                     }
-                    database_connection.end();
+                    
                 });
             }
         });
@@ -132,7 +132,7 @@ function delete_category_by_category_id(cat_id) {
                         console.log('Delete successful:', results);
                         resolve(results);
                     }
-                    database_connection.end();
+                    
                 });
             }
         });

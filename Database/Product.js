@@ -22,7 +22,7 @@ function insert_data_product(product_name, product_desc, product_price, cat_id) 
                         resolve(results);
                     }
 
-                db_connection.end();
+                
                 });
             }
         });
@@ -48,7 +48,7 @@ function read_product_data_by_product_id(product_id) {
                     else {
                         resolve(results);
                     }
-                    db_connection.end();
+                    
                 });
             }
         });
@@ -76,7 +76,7 @@ function get_price(product_id) {
                     else {
                         resolve(results);
                     }
-                    db_connection.end();
+                    
                 });
             }
         });
@@ -104,7 +104,7 @@ function get_products_by_category(category_id) {
                     else {
                         resolve(results);
                     }
-                    db_connection.end();
+                    
                 });
             }
         });
@@ -133,7 +133,7 @@ function update_product_name(product_id, product_new_name) {
                         console.log('Update successful:', results);
                         resolve(results);
                     }
-                    db_connection.end();
+                    
                 });
             }
         });
@@ -163,7 +163,7 @@ function update_product_description(product_id, product_new_description) {
                         console.log('Update successful:', results);
                         resolve(results);
                     }
-                    db_connection.end();
+                    
                 });
             }
         });
@@ -192,7 +192,7 @@ function update_product_price(product_id, product_new_price) {
                         console.log('Update successful:', results);
                         resolve(results);
                     }
-                    db_connection.end();
+                    
                 });
             }
         });
@@ -223,7 +223,7 @@ function update_product_category(product_id, product_new_category_id) {
                         console.log('Update successful:', results);
                         resolve(results);
                     }
-                    db_connection.end();
+                    
                 });
             }
         });
@@ -253,7 +253,7 @@ function delete_product_by_product_id(product_id) {
                         console.log('Delete successful:', results);
                         resolve(results);
                     }
-                    db_connection.end();
+                    
                 });
             }
         });

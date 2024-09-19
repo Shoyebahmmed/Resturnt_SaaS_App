@@ -20,7 +20,7 @@ function insert_order_item(cust_order_id, product_id, quantity, price){
           else{
             resolve(results);
           }
-          db_connection.end();
+          
         }
         )
       }
@@ -47,7 +47,7 @@ function read_customer_order_by_order_id(order_id){
           else{
             resolve(results);
           }
-          db_connection.end();
+          
         }
         )
       }
@@ -75,7 +75,7 @@ function read_customer_order_by_cust_order_id(cust_order_id){
           else{
             resolve(results);
           }
-          db_connection.end();
+          
         }
         )
       }
@@ -104,7 +104,7 @@ function read_customer_order_by_product_id(product_id){
           else{
             resolve(results);
           }
-          db_connection.end();
+          
         }
         )
       }
@@ -132,7 +132,7 @@ function read_customer_order_by_quantity(quantity){
           else{
             resolve(results);
           }
-          db_connection.end();
+          
         }
         )
       }
@@ -160,7 +160,7 @@ function read_customer_order_by_price(price){
           else{
             resolve(results);
           }
-          db_connection.end();
+          
         }
         )
       }
@@ -187,7 +187,7 @@ function update_product_id_by_previous_product_id(new_product_id, previous_produ
             } else {
               resolve(results);
             }
-            db_connection.end();
+            
           });
         }
       });
@@ -212,7 +212,7 @@ function update_product_id_by_previous_product_id(new_product_id, previous_produ
             } else {
               resolve(results);
             }
-            db_connection.end();
+            
           });
         }
       });
@@ -239,7 +239,7 @@ function delete_order_id(order_id) {
           } else {
             resolve(result);
           }
-          db_connection.end();
+          
         });
       }
     });

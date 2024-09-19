@@ -15,7 +15,7 @@ function insert_new_table(table_number, capacity, status){
             }
             else{
                 
-                const query = `INSERT INTO  resturant_table(table_number, capacity, status) VALUES(? ,?, ?) `;     
+                const query = `INSERT INTO  Resturent_Table(table_number, capacity, status) VALUES(? ,?, ?) `;     
                 
                 const table_data = [table_number, capacity , status];
 
@@ -26,7 +26,7 @@ function insert_new_table(table_number, capacity, status){
                     }
                     else{
                         resolve(results);}
-                        db_conn.end();
+                       
                 })
             }
         })
@@ -59,7 +59,7 @@ function readBy_table_number(table_number){
                     }
                     else{
                         resolve(results);}
-                        db_conn.end();
+                       
                 })
             }
         })
@@ -92,7 +92,7 @@ function update_status(table_number, new_status){
                     }
                     else{
                         resolve(results);}
-                        db_conn.end();
+                       
                 })
             }
         })
@@ -125,7 +125,7 @@ function delete_table_number(table_number){
                     }
                     else{
                         resolve(results);}
-                        db_conn.end();
+                       
                 })
             }
         })

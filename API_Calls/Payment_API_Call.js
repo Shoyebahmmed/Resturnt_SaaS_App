@@ -1,5 +1,5 @@
-const server_connection = require('../Connections/Server_Conn');
-const payment = require('../API_Calls/Payment');
+const server_conn = require('../Connections/Server_Conn');
+const payment = require('../Database/Payment');
 
 
 

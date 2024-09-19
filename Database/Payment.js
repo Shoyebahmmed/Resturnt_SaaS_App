@@ -28,7 +28,7 @@ function insert_data_payment(cust_order_id, amount,payment_method){
                     }
                     else{
                         resolve(results);}
-                        db_conn.end();
+                       
                 })
             }
         })
@@ -64,7 +64,7 @@ function readBy_amount(amount){
                     }
                     else{
                         resolve(results);}
-                        db_conn.end();
+                       
                 })
             }
         })
@@ -99,7 +99,7 @@ function readBy_year(year){
                     }
                     else{
                         resolve(results);}
-                        db_conn.end();
+                       
                 })
             }
         })
@@ -133,7 +133,7 @@ function readBy_month(month){
                     }
                     else{
                         resolve(results);}
-                        db_conn.end();
+                       
                 })
             }
         })
@@ -169,7 +169,7 @@ function readBy_day(day){
                     }
                     else{
                         resolve(results);}
-                        db_conn.end();
+                       
                 })
             }
         })
@@ -203,7 +203,7 @@ function delete_by_payment_id(payment_id){
                     }
                     else{
                         resolve(results);}
-                        db_conn.end();
+                       
                 })
             }
         })
@@ -236,7 +236,7 @@ function delete_by_customer_order_id(cust_order_id){
                     }
                     else{
                         resolve(results);}
-                        db_conn.end();
+                       
                 })
             }
         })

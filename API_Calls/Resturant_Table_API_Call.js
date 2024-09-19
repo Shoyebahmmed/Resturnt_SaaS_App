@@ -1,5 +1,5 @@
-const server_connection = require('../Connections/Server_Conn');
-const resturant_table = require('.,/Database/Resturant_Table');
+const server_conn = require('../Connections/Server_Conn');
+const resturant_table = require('../Database/Resturant_Table');
 
 
 
@@ -12,7 +12,7 @@ async function addNewTable(req, res) {
     let status = req.body.status;
 
     try {
-        payment.insert_new_table(table_number, capacity, status).then((response) => {
+        resturant_table.insert_new_table(table_number, capacity, status).then((response) => {
             res.send(response);
         }).catch((err) => {
             console.log(err);
@@ -29,7 +29,7 @@ async function getTableByNumber(req, res) {
     let table_number = req.body.table_number;
 
     try {
-        payment.readBy_table_number(table_number).then((response) => {
+        resturant_table.readBy_table_number(table_number).then((response) => {
             res.send(response);
         }).catch((err) => {
             console.log(err);
@@ -47,7 +47,7 @@ async function updateTableStatus(req, res) {
     let new_status = req.body.new_status;
 
     try {
-        payment.update_status(table_number, new_status).then((response) => {
+        resturant_table.update_status(table_number, new_status).then((response) => {
             res.send(response);
         }).catch((err) => {
             console.log(err);
@@ -64,7 +64,7 @@ async function deleteTableByNumber(req, res) {
     let table_number = req.body.table_number;
 
     try {
-        payment.delete_table_number(table_number).then((response) => {
+        resturant_table.delete_table_number(table_number).then((response) => {
             res.send(response);
         }).catch((err) => {
             console.log(err);
